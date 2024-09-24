@@ -1,0 +1,46 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  
+  .footer-links, .footer-social, .footer-newsletter {
+    margin: 10px 0;
+  }
+  
+  .footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-newsletter form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .footer-newsletter button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-newsletter button:hover {
+    background: #0056b3;
+  }
