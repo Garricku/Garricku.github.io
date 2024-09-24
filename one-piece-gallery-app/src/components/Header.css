@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #232323;
+    color: white;
+    border-bottom: solid #e8ca41 1.5px;
+  }
+  
+  .header-image {
+    height: 50px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .theme-toggle-button {
+    margin-left: 7px;
+    padding: 2.5px 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .theme-toggle-button:hover {
+    background: #0056b3;
+  }
