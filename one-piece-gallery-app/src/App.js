@@ -1,25 +1,131 @@
-import logo from './logo.svg';
+import React from 'react';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+const images = [
+  {
+    name: 'Luffy',
+    images: [
+      { id: 3, url: '/images/luffy/luffy1.jpg', name: 'Luffy 1' },
+      { id: 4, url: '/images/luffy/luffy2.jpg', name: 'Luffy 2' },
+    ],
+  },
+  {
+    name: 'Zoro',
+    images: [
+      { id: 1, url: '/images/nami/zoro1.jpg', name: 'Zoro 1' },
+      { id: 2, url: '/images/nami/zoro2.jpg', name: 'Zoro 2' },
+    ],
+  },
+  {
+    name: 'Nami',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Ussop',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Sanji',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Chopper',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Robin',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Frankie',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Brook',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Jinbei',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Ace',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Sabo',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Shanks',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Boa',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Coby',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+  {
+    name: 'Law',
+    images: [
+      { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
+      { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
+    ],
+  },
+];
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>One Piece Gallery</h1>
+      <Gallery images={images} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
