@@ -3,7 +3,9 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background: #f8f9fa;
+    color: #f8f9fa;
+    background: #232323;
+    border-top: solid #e8ca41 1.5px;
   }
   
   .footer-links, .footer-social, .footer-newsletter {

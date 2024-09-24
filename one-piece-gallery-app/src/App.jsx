@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Gallery from './components/Gallery';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -119,8 +120,15 @@ const images = [
 ];
 
 const App = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
+    <div className={isDarkMode ? 'App dark-mode' : 'App light-mode'}>
+      <Header toggleTheme={toggleTheme} />
       <h1>One Piece Gallery</h1>
       <Gallery images={images} />
       <Footer />

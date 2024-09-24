@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e8ca41; /* Gold color */
+}
+
+p {
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
+  color: #FFD700; /* Gold color */
+}
+
+.light-mode p {
+  color: black;
+}
