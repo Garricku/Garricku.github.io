@@ -1,10 +1,11 @@
 import React from 'react';
 import './Header.css';
+import onePieceImage from '../images/one-piece-crew.jpg';
 
 const Header = ({ toggleTheme }) => {
   return (
     <header className="header">
-      <img src="/images/one-piece-crew.jpg" alt="One Piece Crew" className="header-image" />
+      <img src={ onePieceImage } alt="One Piece Crew" className="header-image" />
       <nav className="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
