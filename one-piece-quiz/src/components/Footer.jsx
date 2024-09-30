@@ -16,12 +16,6 @@ const Footer = () => {
         <a href="https://www.twitter.com/phoenixcreations" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a href="https://www.instagram.com/phoenixcreations" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
-      <div className="footer-newsletter">
-        <form action="/subscribe" method="post">
-          <input type="email" name="email" placeholder="Subscribe to our newsletter" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
       <p>&copy; 2024 Phoenix Creations. All rights reserved.</p>
     </footer>
   );
