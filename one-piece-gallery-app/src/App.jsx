@@ -28,7 +28,7 @@ const images = [
     ],
   },
   {
-    name: 'Ussop',
+    name: 'Usopp',
     images: [
       { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
       { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
@@ -56,7 +56,7 @@ const images = [
     ],
   },
   {
-    name: 'Frankie',
+    name: 'Franky',
     images: [
       { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
       { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
@@ -105,7 +105,7 @@ const images = [
     ],
   },
   {
-    name: 'Coby',
+    name: 'koby',
     images: [
       { id: 1, url: '/images/nami/nami1.jpg', name: 'Nami 1' },
       { id: 2, url: '/images/nami/nami2.jpg', name: 'Nami 2' },
