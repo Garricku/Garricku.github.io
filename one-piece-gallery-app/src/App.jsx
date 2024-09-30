@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Gallery from './components/Gallery';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DonationButton from './components/DonationButton';
 import './App.css';
 
 const images = [
@@ -130,7 +131,9 @@ const App = () => {
     <div className={isDarkMode ? 'App dark-mode' : 'App light-mode'}>
       <Header toggleTheme={toggleTheme} />
       <h1>One Piece Gallery</h1>
+      <DonationButton />
       <Gallery images={images} />
+      <DonationButton />
       <Footer />
     </div>
   );
