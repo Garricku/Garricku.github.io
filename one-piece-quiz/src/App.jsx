@@ -16,8 +16,8 @@ const App = () => {
     <div className={isDarkMode ? 'App dark-mode' : 'App light-mode'}>
       <Header toggleTheme={toggleTheme} />
       <h1>Which One Piece Character Are You?</h1>
-      <DonationButton />
       <Quiz />
+      <DonationButton />
       <Footer />
     </div>
   );

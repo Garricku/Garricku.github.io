@@ -1,11 +1,12 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #232323;
+  color: white;
+  border-bottom: solid #e8ca41 1.5px;
+}
   
   .header-image {
     height: 50px;
