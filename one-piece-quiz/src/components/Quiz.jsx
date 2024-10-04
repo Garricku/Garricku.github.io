@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
 import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon } from 'react-share';
 import './Quiz.css';
+import luffy_img from '../images/luffy.png';
+import nami_img from '../images/nami.png';
+import law_img from '../images/law.png';
+import zoro_img from '../images/zoro.png';
+import robin_img from '../images/robin.png';
+import usopp_img from '../images/usopp.png';
+import sanji_img from '../images/sanji.png';
+import chopper_img from '../images/chopper.png';
+import shanks_img from '../images/shanks.png';
+import sabo_img from '../images/sabo.png';
+import jinbei_img from '../images/jinbei.png';
+import brook_img from '../images/brook.png';
+import koby_img from '../images/koby.png';
+import ace_img from '../images/ace.png';
+import buggy_img from '../images/buggy.png';
 
 const questions = [
   { question: "Do you enjoy spending time with people?", options: ["Strongly Agree", "Agree", "Partly Agree", "Neither Agree nor Disagree", "Partly Disagree", "Disagree", "Strongly Disagree"], type: "EI" },
@@ -13,21 +28,21 @@ const questions = [
 ];
 
 const mbtiMapping = {
-  "ENFP": { name: "Monkey D. Luffy", image: "/images/luffy.jpg", description: "Luffy is adventurous and always seeks new experiences. His optimism and determination inspire everyone around him." },
-  "ESTJ": { name: "Nami", image: "/images/nami.jpg", description: "Nami is practical and organized, using her strategic mind to navigate and protect her crew." },
-  "INTJ": { name: "Trafalgar Law", image: "/images/law.jpg", description: "Law is a strategic thinker with a calm demeanor, always planning several steps ahead." },
-  "ISTP": { name: "Roronoa Zoro", image: "/images/zoro.jpg", description: "Zoro is a skilled swordsman with a pragmatic approach to challenges, focusing on action over words." },
-  "INFJ": { name: "Nico Robin", image: "/images/robin.jpg", description: "Robin is insightful and reserved, with a deep understanding of history and a strong sense of justice." },
-  "ENTP": { name: "Usopp", image: "/images/usopp.jpg", description: "Usopp is inventive and quick-witted, always coming up with creative solutions to problems." },
-  "ENFJ": { name: "Vinsmoke Sanji", image: "/images/sanji.jpg", description: "Sanji is charismatic and caring, always putting others' needs before his own." },
-  "ISFJ": { name: "Tony Tony Chopper", image: "/images/chopper.jpg", description: "Chopper is compassionate and dedicated, always ready to help those in need." },
-  "ENTJ": { name: "Shanks", image: "/images/shanks.jpg", description: "Shanks is a natural leader with a strong sense of responsibility and a charismatic presence." },
-  "ESFP": { name: "Sabo", image: "/images/sabo.jpg", description: "Sabo is energetic and enthusiastic, always ready to fight for what he believes in." },
-  "ISTJ": { name: "Jinbei", image: "/images/jinbei.jpg", description: "Jinbei is reliable and steadfast, with a strong sense of duty and honor." },
-  "INFP": { name: "Brook", image: "/images/brook.jpg", description: "Brook is imaginative and kind-hearted, with a love for music and adventure." },
-  "ISFP": { name: "Koby", image: "/images/koby.jpg", description: "Koby is gentle and empathetic, always striving to improve and help others." },
-  "ESTP": { name: "Portgas D. Ace", image: "/images/ace.jpg", description: "Ace is spirited and adventurous, known for his fiery temperament and strong sense of loyalty." },
-  "INVALID": { name: "Buggy", image: "/images/buggy.jpg", description: "Buggy is unpredictable and flamboyant, often causing chaos with his antics." }
+  "ENFP": { name: "Monkey D. Luffy", image: { luffy_img }, description: "Luffy is adventurous and always seeks new experiences. His optimism and determination inspire everyone around him." },
+  "ESTJ": { name: "Nami", image: { nami_img }, description: "Nami is practical and organized, using her strategic mind to navigate and protect her crew." },
+  "INTJ": { name: "Trafalgar Law", image: { law_img }, description: "Law is a strategic thinker with a calm demeanor, always planning several steps ahead." },
+  "ISTP": { name: "Roronoa Zoro", image: { zoro_img }, description: "Zoro is a skilled swordsman with a pragmatic approach to challenges, focusing on action over words." },
+  "INFJ": { name: "Nico Robin", image: { robin_img }, description: "Robin is insightful and reserved, with a deep understanding of history and a strong sense of justice." },
+  "ENTP": { name: "Usopp", image: { usopp_img }, description: "Usopp is inventive and quick-witted, always coming up with creative solutions to problems." },
+  "ENFJ": { name: "Vinsmoke Sanji", image: { sanji_img }, description: "Sanji is charismatic and caring, always putting others' needs before his own." },
+  "ISFJ": { name: "Tony Tony Chopper", image: { chopper_img }, description: "Chopper is compassionate and dedicated, always ready to help those in need." },
+  "ENTJ": { name: "Shanks", image: { shanks_img }, description: "Shanks is a natural leader with a strong sense of responsibility and a charismatic presence." },
+  "ESFP": { name: "Sabo", image: { sabo_img }, description: "Sabo is energetic and enthusiastic, always ready to fight for what he believes in." },
+  "ISTJ": { name: "Jinbei", image: { jinbei_img }, description: "Jinbei is reliable and steadfast, with a strong sense of duty and honor." },
+  "INFP": { name: "Brook", image: { brook_img }, description: "Brook is imaginative and kind-hearted, with a love for music and adventure." },
+  "ISFP": { name: "Koby", image: { koby_img }, description: "Koby is gentle and empathetic, always striving to improve and help others." },
+  "ESTP": { name: "Portgas D. Ace", image: { ace_img }, description: "Ace is spirited and adventurous, known for his fiery temperament and strong sense of loyalty." },
+  "INVALID": { name: "Buggy", image: { buggy_img }, description: "Buggy is unpredictable and flamboyant, often causing chaos with his antics." }
 };
 
 const Quiz = () => {
