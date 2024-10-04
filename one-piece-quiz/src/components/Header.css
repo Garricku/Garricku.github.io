@@ -1,15 +1,21 @@
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background: #232323;
   color: white;
   border-bottom: solid #e8ca41 1.5px;
+  background-image: url(../images/ship-crop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
   
   .header-image {
-    height: 50px;
+    margin: auto;
+    width: 250px;
   }
   
   .navbar ul {
