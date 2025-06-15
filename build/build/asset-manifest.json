@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e978641a.css",
+    "main.js": "/static/js/main.f6b80680.js",
+    "static/js/453.0a078e5b.chunk.js": "/static/js/453.0a078e5b.chunk.js",
+    "static/media/koby.png": "/static/media/koby.3a8d4805d51fce1ccbf9.png",
+    "static/media/brook.png": "/static/media/brook.96df83ce6b2b7687cb96.png",
+    "static/media/nami.png": "/static/media/nami.f1a747b0798879b2f79c.png",
+    "static/media/buggy.png": "/static/media/buggy.6b10abf17bd97941560b.png",
+    "static/media/chopper.png": "/static/media/chopper.eb6cdecce5cdd18cc902.png",
+    "static/media/sabo.png": "/static/media/sabo.18fc692bd5f12c1f6ec9.png",
+    "static/media/zoro.png": "/static/media/zoro.dd7cbb7e2740846b6178.png",
+    "static/media/shanks.png": "/static/media/shanks.e613b683e6feac13beee.png",
+    "static/media/luffy.png": "/static/media/luffy.a250dc39c0aa2af514b9.png",
+    "static/media/sanji.png": "/static/media/sanji.bda86c1882777c74de32.png",
+    "static/media/usopp.png": "/static/media/usopp.2afe7811a4198e11cef0.png",
+    "static/media/jinbei.png": "/static/media/jinbei.cc4f90d393bcd5058392.png",
+    "static/media/law.png": "/static/media/law.da474a2b813aa5410037.png",
+    "static/media/robin.png": "/static/media/robin.f22e9d752a59fd5c8916.png",
+    "static/media/ace.png": "/static/media/ace.116c8cf98838651e2bfb.png",
+    "static/media/ship-crop.png": "/static/media/ship-crop.b35ad9f7fe5a5d9a0e74.png",
+    "static/media/one-piece-logo.png": "/static/media/one-piece-logo.1ed7d67850151108c593.png",
+    "index.html": "/index.html",
+    "main.e978641a.css.map": "/static/css/main.e978641a.css.map",
+    "main.f6b80680.js.map": "/static/js/main.f6b80680.js.map",
+    "453.0a078e5b.chunk.js.map": "/static/js/453.0a078e5b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e978641a.css",
+    "static/js/main.f6b80680.js"
+  ]
+}
